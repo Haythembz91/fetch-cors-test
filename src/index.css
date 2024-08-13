@@ -1,3 +1,11 @@
 p{
   text-align: center;
 }
+:root{
+  color-scheme: dark light;
+}
+
+body{
+  background-color: dark-light(#fff,#444) ;
+  color: dark-light(#444,#fff) ;
+}
