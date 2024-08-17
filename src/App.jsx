@@ -4,7 +4,7 @@ const App = () => {
   const [name, setName] = useState('');
   const getName = async () => {
     try {
-      const response = await fetch('http://localhost:8000/name');
+      const response = await fetch('https://fetch-cors-test.onrender.com/name');
       if (response.status === 200) {
         const data = await response.json();
         setName(data.name);
